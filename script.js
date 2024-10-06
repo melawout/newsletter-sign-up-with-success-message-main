@@ -9,12 +9,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
     if(validateEmail(email)){
       errorField.style.display = 'none';
-      emailInput.classList.remove('error-border');
-
+      
       window.location.href = "success.html?email=" + encodeURIComponent(email);
     }else {
       errorField.style.display = 'block';
-          emailInput.classList.add('error-border');
     }
 
   })
