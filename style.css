@@ -216,3 +216,33 @@ form{
 }
 
 
+/* newsletter success page */
+
+.newsletter-confirmation{
+  background: white;
+
+  display: grid;
+  height: 100vh;
+  align-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.newsletter-confirmation .title{
+  font-size: var(--fs-9 00);
+  font-weight: var(--fw-bold);
+}
+
+@media(min-width: 500px){
+  .newsletter-confirmation{
+    height: fit-content;
+    max-width: 650px;
+    margin-inline: 1rem;
+    border-radius: 1rem;
+  }
+}
+
+#email-address {
+  font-weight: var(--fw-bold);
+}
+
